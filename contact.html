@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Rizwan Ahmad">
+    <title>Contact | Rizwan Ahmad</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Added EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="/images/RALogo.svg" alt="Rizwan Ahmad Logo" class="logo">
+                <!-- Make name clickable to redirect to home page -->
+                <a href="/home" class="nav-name">Rizwan Ahmad</a>
+            </div>
+            <!-- Add theme toggle button -->
+            <button class="theme-toggle" aria-label="Toggle dark/light mode">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/home">Home</a></li>
+                <li><a href="projects/projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>I'm actively seeking entry-level Network / Systems Administrator, SOC Analyst, or Cybersecurity Analyst roles. If you're looking for a motivated, tech-savvy professional eager to contribute to your team, I'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Me a Message</h2>
+                    <!-- Updated form to use EmailJS instead of Formspree -->
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your company (optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about the opportunity or how I can help..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h2>Contact Information</h2>
+                    
+                    <!-- Added phone number from resume -->
+                    <div class="contact-info-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+15717581093">571-758-1093</a></p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:rizahmad645@gmail.com">rizahmad645@gmail.com</a></p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Social Links</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/rzahmad/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span class="social-icon">🔗</span> LinkedIn
+                            </a>
+                            <a href="https://github.com/rzahmad645" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <span class="social-icon">💻</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Availability</h3>
+                        <!-- Updated availability text to match resume -->
+                        <p>Available for full-time positions, relocation, in-person or hybrid work arrangements. U.S. Citizen.</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Location</h3>
+                        <!-- Updated location from placeholder to actual city -->
+                        <p>Ashburn, VA</p>
+                        <p class="small-text">Open to remote opportunities and relocation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Rizwan Ahmad</p>
+                    <p class="footer-tagline">Tech-Savvy. Detail-Oriented. Eager to Make an Impact.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/rzahmad/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/rzahmad645" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+    <!-- Added EmailJS configuration and form handler -->
+    <script>
+        // Enhanced EmailJS implementation with better error handling
+        (function() {
+            let isInitialized = false; // Prevent multiple initializations
+            
+            // Wait for EmailJS library to load
+            function initEmailJS() {
+                // Prevent multiple initializations
+                if (isInitialized) {
+                    console.log('EmailJS already initialized, skipping...');
+                    return;
+                }
+                
+                // Check if EmailJS is loaded
+                if (typeof emailjs === 'undefined') {
+                    console.error('EmailJS library not loaded. Please check the CDN link.');
+                    const formStatus = document.getElementById('formStatus');
+                    if (formStatus) {
+                        formStatus.innerHTML = '<p style="color: #ef4444;">EmailJS library failed to load. Please refresh the page.</p>';
+                    }
+                    return;
+                }
+
+                console.log('EmailJS library loaded successfully');
+
+                // Initialize EmailJS with your public key
+                try {
+                    emailjs.init('lsG7lLEqEWtIxeVmJ');
+                    console.log('EmailJS initialized with public key');
+                } catch (error) {
+                    console.error('Error initializing EmailJS:', error);
+                    return;
+                }
+
+                // Handle form submission
+                const contactForm = document.getElementById('contactForm');
+                if (!contactForm) {
+                    console.error('Contact form not found');
+                    return;
+                }
+
+                // Check if listener already attached
+                if (contactForm.hasAttribute('data-emailjs-listener')) {
+                    console.log('EmailJS listener already attached, skipping...');
+                    return;
+                }
+
+                console.log('Contact form found, attaching event listener');
+                
+                // Mark as having listener attached
+                contactForm.setAttribute('data-emailjs-listener', 'true');
+
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation(); // Prevent other handlers from running
+                    console.log('Form submitted');
+                    
+                    const formStatus = document.getElementById('formStatus');
+                    const submitBtn = event.target.querySelector('button[type="submit"]');
+                    
+                    // Prevent double submission
+                    if (submitBtn.disabled) {
+                        console.log('Form already submitting, ignoring...');
+                        return;
+                    }
+                    
+                    // Get form data directly from form elements (more reliable)
+                    const nameField = document.getElementById('name');
+                    const emailField = document.getElementById('email');
+                    const companyField = document.getElementById('company');
+                    const messageField = document.getElementById('message');
+                    
+                    const formData = {
+                        name: nameField ? nameField.value.trim() : '',
+                        email: emailField ? emailField.value.trim() : '',
+                        company: companyField ? companyField.value.trim() : '',
+                        message: messageField ? messageField.value.trim() : ''
+                    };
+                    console.log('Form data:', formData);
+                    
+                    // Basic validation
+                    if (!formData.name || !formData.email || !formData.message) {
+                        console.log('Validation failed:', {name: formData.name, email: formData.email, message: formData.message});
+                        if (formStatus) {
+                            formStatus.innerHTML = '<p style="color: #ef4444;">Please fill in all required fields.</p>';
+                        }
+                        return;
+                    }
+                    
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(formData.email)) {
+                        if (formStatus) {
+                            formStatus.innerHTML = '<p style="color: #ef4444;">Please enter a valid email address.</p>';
+                        }
+                        return;
+                    }
+                    
+                    // Disable submit button and show loading state
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending...';
+                    if (formStatus) {
+                        formStatus.textContent = '';
+                    }
+                    
+                    console.log('Sending email via EmailJS...');
+                    console.log('Service ID: service_n4lak5e');
+                    console.log('Template ID: template_87mv2pg');
+                    
+                    // Send email using EmailJS
+                    emailjs.sendForm('service_n4lak5e', 'template_87mv2pg', this)
+                        .then(function(response) {
+                            console.log('SUCCESS!', response);
+                            console.log('Status:', response.status);
+                            console.log('Text:', response.text);
+                            if (formStatus) {
+                                formStatus.innerHTML = '<p style="color: #10b981;">Message sent successfully! I\'ll get back to you soon.</p>';
+                            }
+                            contactForm.reset();
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = 'Send Message';
+                        }, function(error) {
+                            console.error('FAILED...', error);
+                            console.error('Error details:', JSON.stringify(error, null, 2));
+                            if (formStatus) {
+                                let errorMsg = 'Failed to send message. ';
+                                if (error.text) {
+                                    errorMsg += 'Error: ' + error.text;
+                                } else if (error.message) {
+                                    errorMsg += 'Error: ' + error.message;
+                                } else {
+                                    errorMsg += 'Please try again or email me directly.';
+                                }
+                                formStatus.innerHTML = '<p style="color: #ef4444;">' + errorMsg + '</p>';
+                            }
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = 'Send Message';
+                        });
+                });
+                
+                // Mark as initialized
+                isInitialized = true;
+            }
+
+            // Try to initialize when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Wait a bit for EmailJS CDN to load
+                    setTimeout(initEmailJS, 100);
+                });
+            } else {
+                // DOM already loaded
+                setTimeout(initEmailJS, 100);
+            }
+
+            // Also check if EmailJS loads after DOMContentLoaded
+            window.addEventListener('load', function() {
+                if (typeof emailjs !== 'undefined' && !isInitialized) {
+                    console.log('EmailJS loaded after page load, initializing...');
+                    initEmailJS();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
